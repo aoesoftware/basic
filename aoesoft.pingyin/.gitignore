@@ -1,0 +1,10 @@
+/target
+
+classes
+*.class
+
+*.log
+
+/deploy
+
+/bin
