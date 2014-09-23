@@ -1,5 +1,10 @@
 package aoesoft.license;
 
+import java.net.URL;
+
+import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.core.runtime.Status;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
@@ -28,6 +33,19 @@ public class Activator extends AbstractUIPlugin {
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
 		plugin = this;
+		
+		System.out.println(plugin.getBundle().getBundleId());
+		System.out.println(plugin.getBundle().getHeaders().get("Bundle-SymbolicName"));
+		System.out.println(plugin.getBundle().getSymbolicName());
+		System.out.println(plugin.getBundle().getLocation());
+		
+		//System.out.println(Platform.resolve(plugin.getBundle().getResource(plugin.getBundle().getLocation())));
+		
+		URL url = plugin.getBundle().getEntry("icons/logo-product.png");
+		System.out.println(url);
+		System.out.println(Platform.resolve(url));
+		
+		Activator.getDefault().getLog().log(new Status(IStatus.INFO, PLUGIN_ID, "≤‚ ‘–≈œ¢"));
 	}
 
 	/*

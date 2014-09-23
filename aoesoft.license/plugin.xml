@@ -27,7 +27,7 @@
             name="Enterprise IT Center">
          <property
                name="windowImages"
-               value="icons/alt_window_16.gif,icons/alt_window_32.gif">
+               value="icons/logo-product2.png">
          </property>
          <property
                name="appName"
@@ -68,5 +68,12 @@
             configId="aoesoft.license.configId">
       </configExtension>
    </extension>
-
+   
+   <!--
+   <extension
+         id="aoesoft.startup"
+         point="org.eclipse.ui.startup">
+         <startup class="aoesoft.pingyin.Startup"/>
+   </extension>
+	-->
 </plugin>
