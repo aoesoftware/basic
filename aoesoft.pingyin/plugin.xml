@@ -6,5 +6,11 @@
          point="org.eclipse.ui.startup">
          <startup class="aoesoft.pingyin.Startup"/>
    </extension>
+   <extension
+   		id="aoesoft.ui.workbenchActionSet"
+   		label="My"
+   		visible="true"
+         point="org.eclipse.ui.actionSets">
+   </extension>
 
 </plugin>
